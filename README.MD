@@ -28,11 +28,11 @@ This project focuses on implementing the kasaraju algorithm and use server desig
 
 ### Build Instructions
 
-1. **Compile the project**:
-   - Use the following command to compile all targets:
-     ```bash
-     make all
-     ```
+**Compile the project**:
+- Use the following command to compile all targets:
+   ```bash
+   make all
+   ```
 
 **execution**:
 
@@ -73,14 +73,14 @@ Usage:
 - If you run ./list note that all the io will be in from and to stdin and stdout.(run just here and only ./list).
 - Run the server with the implemention that you wish.
 - Open a new terminal or multiple new terminals.
-- In the terminal write : telnet 127.0.0.1 9034 to connect to the server that is running.
+- In the terminal write : telnet 127.0.0.1 9034 or telnet localhost 9034 to connect to the server that is running.
 - Than ask for a Newgraph opertion in one of the clients like this:
     Newgraph 5,5 to create a graph with 5 vertices and 4 edges.
-- Than you can choose which action to preform:
+- Than you can choose which action to preform from this functions:
     Newedge 1,2 to add an edge from vertex 1 to vertex 2.
     Removeedge 1,2 to remove the edge from vertex 1 to vertex 2.
     K to find and print all SCCs in the graph.
-- note that if you run the proactor file and you have more than 50% of the graph in the same connected component than you will get a notifiction about that in the server stdout.
+- Note that if you run the proactor file and you have more than 50% of the graph in the same connected component than you will get a notifiction about that in the server stdout. You will be able to see the notifiction just after the second time you run the 'K' in one of the clients.
 
 ### Profiling:
 - At the gcov folder you can find all the profiling test that was done to determine which of the graph implemention was better to use in this project. The input.txt represent a complected graph that test the implamantions.
